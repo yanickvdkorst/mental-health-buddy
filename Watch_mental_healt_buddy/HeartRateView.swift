@@ -40,7 +40,7 @@ struct HeartRateView: View {
                 }
                 .frame(width: width, height: height)
             }
-            .onChange(of: connectivityManager.heartRate) { newValue in
+            .onChange(of: connectivityManager.heartRate) { newValue in 
                 heartIconScale = 1.2
                 DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
                     heartIconScale = 1.0

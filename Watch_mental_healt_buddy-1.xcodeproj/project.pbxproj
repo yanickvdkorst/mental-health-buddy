@@ -78,6 +78,7 @@
 		D7C502842D7DF2BA0026CF1B /* Watch-mental-healt-buddy-1-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Watch-mental-healt-buddy-1-Info.plist"; sourceTree = "<group>"; };
 		D7F5CB582D9AB9E400D782CE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		D7F5CB5F2D9ABA3600D782CE /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/Localizable.strings; sourceTree = "<group>"; };
+		D7F5CB6B2D9AD3F400D782CE /* Watch_mental_healt_buddy-1.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Watch_mental_healt_buddy-1.entitlements"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -162,6 +163,7 @@
 		D78C45562D78FE4200323A8A = {
 			isa = PBXGroup;
 			children = (
+				D7F5CB6B2D9AD3F400D782CE /* Watch_mental_healt_buddy-1.entitlements */,
 				D7F5CB572D9AB9E400D782CE /* Localizable.strings */,
 				D7C502842D7DF2BA0026CF1B /* Watch-mental-healt-buddy-1-Info.plist */,
 				D78C45612D78FE4200323A8A /* Watch_mental_healt_buddy */,
@@ -712,6 +714,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Watch_mental_healt_buddy-1.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Watch_mental_healt_buddy/Preview Content\"";
@@ -747,6 +750,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Watch_mental_healt_buddy-1.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Watch_mental_healt_buddy/Preview Content\"";
