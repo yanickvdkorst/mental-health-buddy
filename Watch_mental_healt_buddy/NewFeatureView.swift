@@ -3,7 +3,7 @@ import SwiftUI
 struct NewFeatureView: View {
     var body: some View {
         VStack {
-            Text("Hallo Wereld")
+            Text(LocalizedStringKey("new_feature_title"))
                 .font(.largeTitle)
                 .padding()
         }

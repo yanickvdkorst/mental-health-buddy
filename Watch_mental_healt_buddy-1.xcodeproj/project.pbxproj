@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		D78C45862D78FE4500323A8A /* Watch_mental_healt_buddy-1 Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = D78C45852D78FE4500323A8A /* Watch_mental_healt_buddy-1 Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		D7F5CB592D9AB9E400D782CE /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D7F5CB572D9AB9E400D782CE /* Localizable.strings */; };
+		D7F5CB5A2D9AB9E400D782CE /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D7F5CB572D9AB9E400D782CE /* Localizable.strings */; };
+		D7F5CB5B2D9AB9E400D782CE /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D7F5CB572D9AB9E400D782CE /* Localizable.strings */; };
+		D7F5CB5C2D9AB9E400D782CE /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D7F5CB572D9AB9E400D782CE /* Localizable.strings */; };
+		D7F5CB5D2D9AB9E400D782CE /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D7F5CB572D9AB9E400D782CE /* Localizable.strings */; };
+		D7F5CB5E2D9AB9E400D782CE /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D7F5CB572D9AB9E400D782CE /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +76,8 @@
 		D78C45972D78FE4600323A8A /* Watch_mental_healt_buddy-1 Watch AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Watch_mental_healt_buddy-1 Watch AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D78C45A12D78FE4600323A8A /* Watch_mental_healt_buddy-1 Watch AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Watch_mental_healt_buddy-1 Watch AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7C502842D7DF2BA0026CF1B /* Watch-mental-healt-buddy-1-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Watch-mental-healt-buddy-1-Info.plist"; sourceTree = "<group>"; };
+		D7F5CB582D9AB9E400D782CE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		D7F5CB5F2D9ABA3600D782CE /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -154,6 +162,7 @@
 		D78C45562D78FE4200323A8A = {
 			isa = PBXGroup;
 			children = (
+				D7F5CB572D9AB9E400D782CE /* Localizable.strings */,
 				D7C502842D7DF2BA0026CF1B /* Watch-mental-healt-buddy-1-Info.plist */,
 				D78C45612D78FE4200323A8A /* Watch_mental_healt_buddy */,
 				D78C45722D78FE4500323A8A /* Watch_mental_healt_buddyTests */,
@@ -359,6 +368,7 @@
 			knownRegions = (
 				en,
 				Base,
+				nl,
 			);
 			mainGroup = D78C45562D78FE4200323A8A;
 			minimizedProjectReferenceProxies = 1;
@@ -382,6 +392,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D7F5CB592D9AB9E400D782CE /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -389,6 +400,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D7F5CB5A2D9AB9E400D782CE /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -396,6 +408,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D7F5CB5B2D9AB9E400D782CE /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -403,6 +416,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D7F5CB5C2D9AB9E400D782CE /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -410,6 +424,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D7F5CB5D2D9AB9E400D782CE /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -417,6 +432,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D7F5CB5E2D9AB9E400D782CE /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -495,12 +511,25 @@
 		};
 /* End PBXTargetDependency section */
 
+/* Begin PBXVariantGroup section */
+		D7F5CB572D9AB9E400D782CE /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D7F5CB582D9AB9E400D782CE /* en */,
+				D7F5CB5F2D9ABA3600D782CE /* nl */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
 		D78C45A92D78FE4600323A8A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -562,6 +591,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";

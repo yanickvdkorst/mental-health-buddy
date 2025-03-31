@@ -11,6 +11,10 @@ struct ContentView: View {
                 .tabItem {
                     Text("New Features")
                 }
+            SleepView()
+                .tabItem {
+                    Text("Sleep View")
+                }
         }
         .tabViewStyle(PageTabViewStyle())
     }

@@ -14,6 +14,11 @@ struct ContentView: View {
                         Image(systemName: "star.fill")
                         Text("New Features")
                     }
+                SleepView()
+                    .tabItem {
+                        Image(systemName: "bed.double.fill")
+                        Text("Sleep View")
+                    }
             }
         }
     }

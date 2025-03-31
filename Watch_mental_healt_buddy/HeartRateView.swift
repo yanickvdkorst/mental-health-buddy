@@ -19,7 +19,7 @@ struct HeartRateView: View {
                     .ignoresSafeArea()
 
                 VStack(spacing: padding) {
-                    Text("Current Heart Rate")
+                    Text(LocalizedStringKey("heart_rate_title"))
                         .font(.system(size: textSize, weight: .black))
                         .foregroundColor(Color.white)
                         .multilineTextAlignment(.center)
