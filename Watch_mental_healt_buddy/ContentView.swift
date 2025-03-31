@@ -15,7 +15,6 @@ struct ContentView: View {
                         Text("New Features")
                     }
             }
-            .navigationBarTitle("Main View", displayMode: .inline)
         }
     }
 }

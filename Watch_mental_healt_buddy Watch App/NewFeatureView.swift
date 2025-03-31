@@ -10,3 +10,6 @@ struct NewFeatureView: View {
         .padding()
     }
 }
+#Preview {
+    NewFeatureView()
+}
