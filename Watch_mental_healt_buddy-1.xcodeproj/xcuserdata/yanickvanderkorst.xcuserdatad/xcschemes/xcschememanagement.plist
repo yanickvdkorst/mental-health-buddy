@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>Watch_mental_healt_buddy Watch App.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+		<key>Watch_mental_healt_buddy.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>0</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>D78C455E2D78FE4200323A8A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D78C456E2D78FE4500323A8A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D78C45782D78FE4500323A8A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D78C45842D78FE4500323A8A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D78C45962D78FE4600323A8A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D78C45A02D78FE4600323A8A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>

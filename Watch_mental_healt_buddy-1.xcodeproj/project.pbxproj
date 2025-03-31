@@ -1,0 +1,980 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D78C45862D78FE4500323A8A /* Watch_mental_healt_buddy-1 Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = D78C45852D78FE4500323A8A /* Watch_mental_healt_buddy-1 Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D78C45702D78FE4500323A8A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D78C45572D78FE4200323A8A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D78C455E2D78FE4200323A8A;
+			remoteInfo = Watch_mental_healt_buddy;
+		};
+		D78C457A2D78FE4500323A8A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D78C45572D78FE4200323A8A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D78C455E2D78FE4200323A8A;
+			remoteInfo = Watch_mental_healt_buddy;
+		};
+		D78C45872D78FE4500323A8A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D78C45572D78FE4200323A8A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D78C45842D78FE4500323A8A;
+			remoteInfo = "Watch_mental_healt_buddy Watch App";
+		};
+		D78C45982D78FE4600323A8A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D78C45572D78FE4200323A8A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D78C45842D78FE4500323A8A;
+			remoteInfo = "Watch_mental_healt_buddy Watch App";
+		};
+		D78C45A22D78FE4600323A8A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D78C45572D78FE4200323A8A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D78C45842D78FE4500323A8A;
+			remoteInfo = "Watch_mental_healt_buddy Watch App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D78C45AE2D78FE4600323A8A /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				D78C45862D78FE4500323A8A /* Watch_mental_healt_buddy-1 Watch App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		D78C455F2D78FE4200323A8A /* Watch_mental_healt_buddy-1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Watch_mental_healt_buddy-1.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D78C456F2D78FE4500323A8A /* Watch_mental_healt_buddy-1Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Watch_mental_healt_buddy-1Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D78C45792D78FE4500323A8A /* Watch_mental_healt_buddy-1UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Watch_mental_healt_buddy-1UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D78C45852D78FE4500323A8A /* Watch_mental_healt_buddy-1 Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Watch_mental_healt_buddy-1 Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D78C45972D78FE4600323A8A /* Watch_mental_healt_buddy-1 Watch AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Watch_mental_healt_buddy-1 Watch AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D78C45A12D78FE4600323A8A /* Watch_mental_healt_buddy-1 Watch AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Watch_mental_healt_buddy-1 Watch AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7C502842D7DF2BA0026CF1B /* Watch-mental-healt-buddy-1-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Watch-mental-healt-buddy-1-Info.plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		D78C45612D78FE4200323A8A /* Watch_mental_healt_buddy */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Watch_mental_healt_buddy;
+			sourceTree = "<group>";
+		};
+		D78C45722D78FE4500323A8A /* Watch_mental_healt_buddyTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Watch_mental_healt_buddyTests;
+			sourceTree = "<group>";
+		};
+		D78C457C2D78FE4500323A8A /* Watch_mental_healt_buddyUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Watch_mental_healt_buddyUITests;
+			sourceTree = "<group>";
+		};
+		D78C45892D78FE4500323A8A /* Watch_mental_healt_buddy Watch App */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "Watch_mental_healt_buddy Watch App";
+			sourceTree = "<group>";
+		};
+		D78C459A2D78FE4600323A8A /* Watch_mental_healt_buddy Watch AppTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "Watch_mental_healt_buddy Watch AppTests";
+			sourceTree = "<group>";
+		};
+		D78C45A42D78FE4600323A8A /* Watch_mental_healt_buddy Watch AppUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "Watch_mental_healt_buddy Watch AppUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D78C455C2D78FE4200323A8A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D78C456C2D78FE4500323A8A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D78C45762D78FE4500323A8A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D78C45822D78FE4500323A8A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D78C45942D78FE4600323A8A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D78C459E2D78FE4600323A8A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D78C45562D78FE4200323A8A = {
+			isa = PBXGroup;
+			children = (
+				D7C502842D7DF2BA0026CF1B /* Watch-mental-healt-buddy-1-Info.plist */,
+				D78C45612D78FE4200323A8A /* Watch_mental_healt_buddy */,
+				D78C45722D78FE4500323A8A /* Watch_mental_healt_buddyTests */,
+				D78C457C2D78FE4500323A8A /* Watch_mental_healt_buddyUITests */,
+				D78C45892D78FE4500323A8A /* Watch_mental_healt_buddy Watch App */,
+				D78C459A2D78FE4600323A8A /* Watch_mental_healt_buddy Watch AppTests */,
+				D78C45A42D78FE4600323A8A /* Watch_mental_healt_buddy Watch AppUITests */,
+				D78C45602D78FE4200323A8A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D78C45602D78FE4200323A8A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D78C455F2D78FE4200323A8A /* Watch_mental_healt_buddy-1.app */,
+				D78C456F2D78FE4500323A8A /* Watch_mental_healt_buddy-1Tests.xctest */,
+				D78C45792D78FE4500323A8A /* Watch_mental_healt_buddy-1UITests.xctest */,
+				D78C45852D78FE4500323A8A /* Watch_mental_healt_buddy-1 Watch App.app */,
+				D78C45972D78FE4600323A8A /* Watch_mental_healt_buddy-1 Watch AppTests.xctest */,
+				D78C45A12D78FE4600323A8A /* Watch_mental_healt_buddy-1 Watch AppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D78C455E2D78FE4200323A8A /* Watch_mental_healt_buddy-1 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D78C45AF2D78FE4600323A8A /* Build configuration list for PBXNativeTarget "Watch_mental_healt_buddy-1" */;
+			buildPhases = (
+				D78C455B2D78FE4200323A8A /* Sources */,
+				D78C455C2D78FE4200323A8A /* Frameworks */,
+				D78C455D2D78FE4200323A8A /* Resources */,
+				D78C45AE2D78FE4600323A8A /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D78C45882D78FE4500323A8A /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				D78C45612D78FE4200323A8A /* Watch_mental_healt_buddy */,
+			);
+			name = "Watch_mental_healt_buddy-1";
+			packageProductDependencies = (
+			);
+			productName = Watch_mental_healt_buddy;
+			productReference = D78C455F2D78FE4200323A8A /* Watch_mental_healt_buddy-1.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D78C456E2D78FE4500323A8A /* Watch_mental_healt_buddy-1Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D78C45B22D78FE4600323A8A /* Build configuration list for PBXNativeTarget "Watch_mental_healt_buddy-1Tests" */;
+			buildPhases = (
+				D78C456B2D78FE4500323A8A /* Sources */,
+				D78C456C2D78FE4500323A8A /* Frameworks */,
+				D78C456D2D78FE4500323A8A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D78C45712D78FE4500323A8A /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				D78C45722D78FE4500323A8A /* Watch_mental_healt_buddyTests */,
+			);
+			name = "Watch_mental_healt_buddy-1Tests";
+			packageProductDependencies = (
+			);
+			productName = Watch_mental_healt_buddyTests;
+			productReference = D78C456F2D78FE4500323A8A /* Watch_mental_healt_buddy-1Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D78C45782D78FE4500323A8A /* Watch_mental_healt_buddy-1UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D78C45B52D78FE4600323A8A /* Build configuration list for PBXNativeTarget "Watch_mental_healt_buddy-1UITests" */;
+			buildPhases = (
+				D78C45752D78FE4500323A8A /* Sources */,
+				D78C45762D78FE4500323A8A /* Frameworks */,
+				D78C45772D78FE4500323A8A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D78C457B2D78FE4500323A8A /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				D78C457C2D78FE4500323A8A /* Watch_mental_healt_buddyUITests */,
+			);
+			name = "Watch_mental_healt_buddy-1UITests";
+			packageProductDependencies = (
+			);
+			productName = Watch_mental_healt_buddyUITests;
+			productReference = D78C45792D78FE4500323A8A /* Watch_mental_healt_buddy-1UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		D78C45842D78FE4500323A8A /* Watch_mental_healt_buddy-1 Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D78C45AB2D78FE4600323A8A /* Build configuration list for PBXNativeTarget "Watch_mental_healt_buddy-1 Watch App" */;
+			buildPhases = (
+				D78C45812D78FE4500323A8A /* Sources */,
+				D78C45822D78FE4500323A8A /* Frameworks */,
+				D78C45832D78FE4500323A8A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				D78C45892D78FE4500323A8A /* Watch_mental_healt_buddy Watch App */,
+			);
+			name = "Watch_mental_healt_buddy-1 Watch App";
+			packageProductDependencies = (
+			);
+			productName = "Watch_mental_healt_buddy Watch App";
+			productReference = D78C45852D78FE4500323A8A /* Watch_mental_healt_buddy-1 Watch App.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D78C45962D78FE4600323A8A /* Watch_mental_healt_buddy-1 Watch AppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D78C45B82D78FE4600323A8A /* Build configuration list for PBXNativeTarget "Watch_mental_healt_buddy-1 Watch AppTests" */;
+			buildPhases = (
+				D78C45932D78FE4600323A8A /* Sources */,
+				D78C45942D78FE4600323A8A /* Frameworks */,
+				D78C45952D78FE4600323A8A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D78C45992D78FE4600323A8A /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				D78C459A2D78FE4600323A8A /* Watch_mental_healt_buddy Watch AppTests */,
+			);
+			name = "Watch_mental_healt_buddy-1 Watch AppTests";
+			packageProductDependencies = (
+			);
+			productName = "Watch_mental_healt_buddy Watch AppTests";
+			productReference = D78C45972D78FE4600323A8A /* Watch_mental_healt_buddy-1 Watch AppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D78C45A02D78FE4600323A8A /* Watch_mental_healt_buddy-1 Watch AppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D78C45BB2D78FE4600323A8A /* Build configuration list for PBXNativeTarget "Watch_mental_healt_buddy-1 Watch AppUITests" */;
+			buildPhases = (
+				D78C459D2D78FE4600323A8A /* Sources */,
+				D78C459E2D78FE4600323A8A /* Frameworks */,
+				D78C459F2D78FE4600323A8A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D78C45A32D78FE4600323A8A /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				D78C45A42D78FE4600323A8A /* Watch_mental_healt_buddy Watch AppUITests */,
+			);
+			name = "Watch_mental_healt_buddy-1 Watch AppUITests";
+			packageProductDependencies = (
+			);
+			productName = "Watch_mental_healt_buddy Watch AppUITests";
+			productReference = D78C45A12D78FE4600323A8A /* Watch_mental_healt_buddy-1 Watch AppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D78C45572D78FE4200323A8A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1620;
+				LastUpgradeCheck = 1620;
+				TargetAttributes = {
+					D78C455E2D78FE4200323A8A = {
+						CreatedOnToolsVersion = 16.2;
+					};
+					D78C456E2D78FE4500323A8A = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = D78C455E2D78FE4200323A8A;
+					};
+					D78C45782D78FE4500323A8A = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = D78C455E2D78FE4200323A8A;
+					};
+					D78C45842D78FE4500323A8A = {
+						CreatedOnToolsVersion = 16.2;
+					};
+					D78C45962D78FE4600323A8A = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = D78C45842D78FE4500323A8A;
+					};
+					D78C45A02D78FE4600323A8A = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = D78C45842D78FE4500323A8A;
+					};
+				};
+			};
+			buildConfigurationList = D78C455A2D78FE4200323A8A /* Build configuration list for PBXProject "Watch_mental_healt_buddy-1" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D78C45562D78FE4200323A8A;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = D78C45602D78FE4200323A8A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D78C455E2D78FE4200323A8A /* Watch_mental_healt_buddy-1 */,
+				D78C456E2D78FE4500323A8A /* Watch_mental_healt_buddy-1Tests */,
+				D78C45782D78FE4500323A8A /* Watch_mental_healt_buddy-1UITests */,
+				D78C45842D78FE4500323A8A /* Watch_mental_healt_buddy-1 Watch App */,
+				D78C45962D78FE4600323A8A /* Watch_mental_healt_buddy-1 Watch AppTests */,
+				D78C45A02D78FE4600323A8A /* Watch_mental_healt_buddy-1 Watch AppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D78C455D2D78FE4200323A8A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D78C456D2D78FE4500323A8A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D78C45772D78FE4500323A8A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D78C45832D78FE4500323A8A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D78C45952D78FE4600323A8A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D78C459F2D78FE4600323A8A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D78C455B2D78FE4200323A8A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D78C456B2D78FE4500323A8A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D78C45752D78FE4500323A8A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D78C45812D78FE4500323A8A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D78C45932D78FE4600323A8A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D78C459D2D78FE4600323A8A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D78C45712D78FE4500323A8A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D78C455E2D78FE4200323A8A /* Watch_mental_healt_buddy-1 */;
+			targetProxy = D78C45702D78FE4500323A8A /* PBXContainerItemProxy */;
+		};
+		D78C457B2D78FE4500323A8A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D78C455E2D78FE4200323A8A /* Watch_mental_healt_buddy-1 */;
+			targetProxy = D78C457A2D78FE4500323A8A /* PBXContainerItemProxy */;
+		};
+		D78C45882D78FE4500323A8A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D78C45842D78FE4500323A8A /* Watch_mental_healt_buddy-1 Watch App */;
+			targetProxy = D78C45872D78FE4500323A8A /* PBXContainerItemProxy */;
+		};
+		D78C45992D78FE4600323A8A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D78C45842D78FE4500323A8A /* Watch_mental_healt_buddy-1 Watch App */;
+			targetProxy = D78C45982D78FE4600323A8A /* PBXContainerItemProxy */;
+		};
+		D78C45A32D78FE4600323A8A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D78C45842D78FE4500323A8A /* Watch_mental_healt_buddy-1 Watch App */;
+			targetProxy = D78C45A22D78FE4600323A8A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		D78C45A92D78FE4600323A8A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D78C45AA2D78FE4600323A8A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		D78C45AC2D78FE4600323A8A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Watch_mental_healt_buddy Watch App/Watch_mental_healt_buddy Watch App.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Watch_mental_healt_buddy Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = M85QLHMULX;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Watch_mental_healt_buddy;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "appexamples want to acces your health data in order to analyze your health and best advice";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "appexamples want to acces your health data in order to analyze your health and best advice";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "yanick.Watch-mental-healt-buddy-1";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "yanick.Watch-mental-healt-buddy-1.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 11.2;
+			};
+			name = Debug;
+		};
+		D78C45AD2D78FE4600323A8A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Watch_mental_healt_buddy Watch App/Watch_mental_healt_buddy Watch App.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Watch_mental_healt_buddy Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = M85QLHMULX;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Watch_mental_healt_buddy;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "appexamples want to acces your health data in order to analyze your health and best advice";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "appexamples want to acces your health data in order to analyze your health and best advice";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "yanick.Watch-mental-healt-buddy-1";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "yanick.Watch-mental-healt-buddy-1.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 11.2;
+			};
+			name = Release;
+		};
+		D78C45B02D78FE4600323A8A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Watch_mental_healt_buddy/Preview Content\"";
+				DEVELOPMENT_TEAM = M85QLHMULX;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Watch-mental-healt-buddy-1-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = Watch_mental_healt_buddy;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "appexamples want to acces your health data in order to analyze your health and best advice";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "appexamples want to acces your health data in order to analyze your health and best advice";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "yanick.Watch-mental-healt-buddy-1";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D78C45B12D78FE4600323A8A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Watch_mental_healt_buddy/Preview Content\"";
+				DEVELOPMENT_TEAM = M85QLHMULX;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Watch-mental-healt-buddy-1-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = Watch_mental_healt_buddy;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "appexamples want to acces your health data in order to analyze your health and best advice";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "appexamples want to acces your health data in order to analyze your health and best advice";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "yanick.Watch-mental-healt-buddy-1";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D78C45B32D78FE4600323A8A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = M85QLHMULX;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "yanick.Watch-mental-healt-buddy-1Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Watch_mental_healt_buddy-1.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Watch_mental_healt_buddy-1";
+			};
+			name = Debug;
+		};
+		D78C45B42D78FE4600323A8A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = M85QLHMULX;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "yanick.Watch-mental-healt-buddy-1Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Watch_mental_healt_buddy-1.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Watch_mental_healt_buddy-1";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D78C45B62D78FE4600323A8A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = M85QLHMULX;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "yanick.Watch-mental-healt-buddy-1UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Watch_mental_healt_buddy;
+			};
+			name = Debug;
+		};
+		D78C45B72D78FE4600323A8A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = M85QLHMULX;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "yanick.Watch-mental-healt-buddy-1UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Watch_mental_healt_buddy;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D78C45B92D78FE4600323A8A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = M85QLHMULX;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "yanick.Watch-mental-healt-buddy-1-Watch-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Watch_mental_healt_buddy-1 Watch App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Watch_mental_healt_buddy-1 Watch App";
+				WATCHOS_DEPLOYMENT_TARGET = 11.2;
+			};
+			name = Debug;
+		};
+		D78C45BA2D78FE4600323A8A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = M85QLHMULX;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "yanick.Watch-mental-healt-buddy-1-Watch-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Watch_mental_healt_buddy-1 Watch App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Watch_mental_healt_buddy-1 Watch App";
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 11.2;
+			};
+			name = Release;
+		};
+		D78C45BC2D78FE4600323A8A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = M85QLHMULX;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "yanick.Watch-mental-healt-buddy-1-Watch-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "Watch_mental_healt_buddy Watch App";
+				WATCHOS_DEPLOYMENT_TARGET = 11.2;
+			};
+			name = Debug;
+		};
+		D78C45BD2D78FE4600323A8A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = M85QLHMULX;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "yanick.Watch-mental-healt-buddy-1-Watch-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "Watch_mental_healt_buddy Watch App";
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 11.2;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D78C455A2D78FE4200323A8A /* Build configuration list for PBXProject "Watch_mental_healt_buddy-1" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D78C45A92D78FE4600323A8A /* Debug */,
+				D78C45AA2D78FE4600323A8A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D78C45AB2D78FE4600323A8A /* Build configuration list for PBXNativeTarget "Watch_mental_healt_buddy-1 Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D78C45AC2D78FE4600323A8A /* Debug */,
+				D78C45AD2D78FE4600323A8A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D78C45AF2D78FE4600323A8A /* Build configuration list for PBXNativeTarget "Watch_mental_healt_buddy-1" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D78C45B02D78FE4600323A8A /* Debug */,
+				D78C45B12D78FE4600323A8A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D78C45B22D78FE4600323A8A /* Build configuration list for PBXNativeTarget "Watch_mental_healt_buddy-1Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D78C45B32D78FE4600323A8A /* Debug */,
+				D78C45B42D78FE4600323A8A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D78C45B52D78FE4600323A8A /* Build configuration list for PBXNativeTarget "Watch_mental_healt_buddy-1UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D78C45B62D78FE4600323A8A /* Debug */,
+				D78C45B72D78FE4600323A8A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D78C45B82D78FE4600323A8A /* Build configuration list for PBXNativeTarget "Watch_mental_healt_buddy-1 Watch AppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D78C45B92D78FE4600323A8A /* Debug */,
+				D78C45BA2D78FE4600323A8A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D78C45BB2D78FE4600323A8A /* Build configuration list for PBXNativeTarget "Watch_mental_healt_buddy-1 Watch AppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D78C45BC2D78FE4600323A8A /* Debug */,
+				D78C45BD2D78FE4600323A8A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D78C45572D78FE4200323A8A /* Project object */;
+}
