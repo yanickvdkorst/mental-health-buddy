@@ -13,8 +13,7 @@ class NotificationManager {
         }
     }
 
-    func sendTestNotification() {
-        // Check authorization status
+    func sendNotificationToPhone() {
         UNUserNotificationCenter.current().getNotificationSettings { settings in
             guard settings.authorizationStatus == .authorized else {
                 print("Notifications are not authorized")
@@ -22,17 +21,19 @@ class NotificationManager {
             }
 
             let content = UNMutableNotificationContent()
-            content.title = "Test Notification"
-            content.body = "This is a test notification."
+            content.title = "iPhone Notification"
+            content.body = "This is a notification sent to your iPhone."
             content.sound = .default
 
-            let request = UNNotificationRequest(identifier: UUID().uuidString, content: content, trigger: nil)
+            let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 5, repeats: false)
+            let request = UNNotificationRequest(identifier: UUID().uuidString, content: content, trigger: trigger)
 
+            print("Attempting to send notification to iPhone...")
             UNUserNotificationCenter.current().add(request) { error in
                 if let error = error {
                     print("Error sending notification: \(error)")
                 } else {
-                    print("Notification sent successfully")
+                    print("Notification sent successfully to iPhone.")
                 }
             }
         }

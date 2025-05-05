@@ -3,13 +3,20 @@ import SwiftUI
 struct NewFeatureView: View {
     var body: some View {
         VStack(spacing: 20) {
-            Text(LocalizedStringKey("new_feature_title"))
+            Text("New Feature")
                 .font(.largeTitle)
                 .padding()
 
-            Button("Stuur Melding") {
+            Button("Request Notification Authorization") {
                 NotificationManager.instance.requestAuthorization()
-                NotificationManager.instance.sendTestNotification()
+            }
+            .padding()
+            .background(Color.green)
+            .foregroundColor(.white)
+            .clipShape(Capsule())
+
+            Button("Send Notification to Phone") {
+                NotificationManager.instance.sendNotificationToPhone()
             }
             .padding()
             .background(Color.blue)
