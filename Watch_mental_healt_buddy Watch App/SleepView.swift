@@ -21,7 +21,10 @@ struct SleepView: View {
                         .frame(width: iconSize, height: iconSize)
                         .foregroundColor(Color(red: 255/255, green: 255/255, blue: 255/255))
                     if let sleepData = sleepDataManager.sleepData {
-                        Text("\(sleepData.hours) hours \(sleepData.minutes) minutes")
+                        Text("\(sleepData.hours) hours")
+                            .font(.system(size: textSize, weight: .black))
+                            .foregroundColor(Color.white)
+                        Text("\(sleepData.minutes) minutes")
                             .font(.system(size: textSize, weight: .black))
                             .foregroundColor(Color.white)
                     } else {
@@ -33,7 +36,7 @@ struct SleepView: View {
                 .frame(width: geometry.size.width, height: geometry.size.height)
             }
             .onAppear {
-                print("SleepView appeared")
+                print("SleepView appeared on watch")
                 sleepDataManager.requestAuthorization()
             }
         }

@@ -12,17 +12,17 @@ class SleepDataManager: ObservableObject {
     private var healthStore = HKHealthStore()
 
     func requestAuthorization() {
-        print("Requesting authorization...")
+        print("Requesting authorization from Watch...")
         let sleepType = HKObjectType.categoryType(forIdentifier: .sleepAnalysis)!
         healthStore.requestAuthorization(toShare: nil, read: [sleepType]) { success, error in
             if success {
-                print("Authorization successful")
+                print("Authorization successful on Watch")
                 self.fetchSleepData()
             } else {
                 if let error = error {
-                    print("Authorization failed with error: \(error.localizedDescription)")
+                    print("Authorization failed with error on Watch: \(error.localizedDescription)")
                 } else {
-                    print("Authorization failed")
+                    print("Authorization failed on Watch")
                 }
             }
         }
@@ -31,27 +31,44 @@ class SleepDataManager: ObservableObject {
     func fetchSleepData() {
         print("fetchSleepData function called")
         let sleepType = HKObjectType.categoryType(forIdentifier: .sleepAnalysis)!
+        let calendar = Calendar.current
+        let now = Date()
+        let startDate = calendar.date(bySettingHour: 20, minute: 0, second: 0, of: calendar.date(byAdding: .day, value: -1, to: now)!)!
+        let endDate = calendar.date(bySettingHour: 8, minute: 0, second: 0, of: now)!
+
+        let predicate = HKQuery.predicateForSamples(withStart: startDate, end: endDate, options: .strictEndDate)
         let sortDescriptor = NSSortDescriptor(key: HKSampleSortIdentifierEndDate, ascending: false)
-        let query = HKSampleQuery(sampleType: sleepType, predicate: nil, limit: 1, sortDescriptors: [sortDescriptor]) { query, results, error in
+
+        let query = HKSampleQuery(sampleType: sleepType, predicate: predicate, limit: HKObjectQueryNoLimit, sortDescriptors: [sortDescriptor]) { query, results, error in
             if let error = error {
                 print("Error fetching sleep data: \(error.localizedDescription)")
                 return
             }
 
-            guard let result = results?.first as? HKCategorySample else {
+            guard let results = results as? [HKCategorySample], !results.isEmpty else {
                 print("No sleep data found")
                 return
             }
 
-            let sleepDuration = result.endDate.timeIntervalSince(result.startDate)
-            let hours = Int(sleepDuration) / 3600
-            let minutes = (Int(sleepDuration) % 3600) / 60
+            var totalSleepDuration: TimeInterval = 0
+            for result in results {
+                let sleepDuration = result.endDate.timeIntervalSince(result.startDate)
+                totalSleepDuration += sleepDuration
+            }
 
-            print("Fetched sleep data: \(hours) hours, \(minutes) minutes")
+            let totalHours = Int(totalSleepDuration) / 3600
+            let totalMinutes = (Int(totalSleepDuration) % 3600) / 60
+            print("Total sleep duration over the past night: \(totalHours) hours, \(totalMinutes) minutes")
 
             DispatchQueue.main.async {
-                self.sleepData = SleepData(id: UUID(), hours: hours, minutes: minutes)
+                self.sleepData = SleepData(id: UUID(), hours: totalHours, minutes: totalMinutes)
             }
+
+            #if DEBUG
+            DispatchQueue.main.async {
+                self.sleepData = SleepData(id: UUID(), hours: 7, minutes: 30)
+            }
+            #endif
         }
         healthStore.execute(query)
     }
