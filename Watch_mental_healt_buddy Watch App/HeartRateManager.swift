@@ -98,7 +98,9 @@ class HeartRateManager: NSObject, ObservableObject, WCSessionDelegate {
                 
                 // Calculate the average and update the heart rate
                 self.heartRate = self.calculateAverageHeartRate()
-//                print("Average Heart Rate: \(self.heartRate) BPM")
+                
+                // Check the heart rate and send a notification if necessary
+                NotificationManager.instance.checkHeartRate(heartRate: Int(self.heartRate))
                 
                 // Send the heart rate to the iOS app using Watch Connectivity
                 self.sendHeartRateToPhone(self.heartRate)
