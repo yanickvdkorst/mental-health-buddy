@@ -4,6 +4,11 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             TabView {
+                HomePageView()
+                    .tabItem {
+                        Image(systemName: "house.fill")
+                        Text("Home")
+                    }
                 HeartRateView()
                     .tabItem {
                         Image(systemName: "heart.fill")
