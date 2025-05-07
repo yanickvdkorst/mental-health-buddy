@@ -1,26 +1,39 @@
 import SwiftUI
 
+struct CardData: Identifiable {
+    let id = UUID()
+    var title: String
+    var description: String
+    var icon: String
+}
+
 struct HomePageView: View {
+    @ObservedObject var sleepDataManager = SleepDataManager()
+    @State private var cards = [
+        CardData(title: "Tip", description: "Take 5 min to breathe today", icon: "lamp"),
+        CardData(title: "Chance of Panic Attack", description: "Unlikely", icon: "question"),
+        CardData(title: "Sleep", description: "This is the third card.", icon: "moon"),
+    ]
+
     var body: some View {
         ZStack {
-            // Achtergrondkleur
+            // Background color
             Style.StyleColor.background
                 .ignoresSafeArea()
-            
+
             VStack(alignment: .leading, spacing: 24) {
-                // Tekst linksboven
+                // Header text
                 Text("Summary")
                     .font(Style.Text.title1)
                     .foregroundColor(Style.StyleColor.textPrimary)
                     .padding(.leading)
-                
-                // Afbeelding met tekst
+
+                // Image with text overlay
                 ZStack {
-                    Image("stok") // Vervang dit met je eigen afbeelding
+                    Image("stok")
                         .resizable()
                         .frame(height: 232)
 
-                    // Linear gradient
                     LinearGradient(
                         gradient: Gradient(colors: [Color.black.opacity(0.0), Color.black.opacity(0.8)]),
                         startPoint: .top,
@@ -32,32 +45,55 @@ struct HomePageView: View {
                     Text("You are doing fine!")
                         .font(Style.Text.title1)
                         .foregroundColor(Style.StyleColor.white)
-                        .offset(y: 60) // Verplaatst de tekst 20 punten naar beneden
+                        .offset(y: 60)
                 }
                 .cornerRadius(10)
-                
-                // Klikbare kaarten
+
+                // Clickable cards
                 VStack(spacing: 8) {
-                    ForEach(1...3, id: \.self) { index in
+                    ForEach($cards) { $card in
                         Button(action: {
-                            print("Card \(index) clicked")
+                            print("\(card.title) clicked")
                         }) {
-                            Text("Card \(index)")
-                                .font(Style.Text.body)
-                                .foregroundColor(Style.StyleColor.textThird)
-                                .fontWeight(.bold)
-                                .frame(maxWidth: .infinity)
-                                .padding()
-                                .background(Style.StyleColor.white)
-                                .cornerRadius(8)
+                            VStack(alignment: .leading, spacing: 8) {
+                                HStack(spacing: 8) { // HStack voor icoon en titel
+                                    Image(card.icon) // Vervang door je eigen icoon
+                                        .resizable()
+                                        .frame(width: 20, height: 24)
+                                        .foregroundColor(Style.StyleColor.black)
+                                    Text(card.title)
+                                        .font(Style.Text.subheadline)
+                                        .foregroundColor(Style.StyleColor.black)
+                                }
+                                Text(card.description)
+                                    .font(Style.Text.body)
+                                    .foregroundColor(Style.StyleColor.textThird)
+                                    .fontWeight(.bold)
+                            }
+                            .padding(.vertical, 8)
+                            .padding(.horizontal, 16)
+                            .frame(maxWidth: .infinity, alignment: .leading)
+                            .background(Color.white)
+                            .cornerRadius(8)
                         }
+                        .frame(maxWidth: .infinity)
                     }
                 }
-                
+
                 Spacer()
             }
-            .padding(.horizontal, 16) // Padding links en rechts
+            .padding(.horizontal, 16)
             .padding(.top)
+        }
+        .onAppear {
+            sleepDataManager.requestAuthorization()
+            
+            if let sleepData = sleepDataManager.sleepData {
+                let sleepDescription = "\(sleepData.hours) hr \(sleepData.minutes) min"
+                cards[2].description = sleepDescription
+            } else {
+                cards[2].description = "Loading..."
+            }
         }
     }
 }
