@@ -5,6 +5,7 @@ struct SleepData: Identifiable {
     var id: UUID
     var hours: Int
     var minutes: Int
+    var status: String
 }
 
 class SleepDataManager: ObservableObject {
@@ -30,6 +31,12 @@ class SleepDataManager: ObservableObject {
 
     func fetchSleepData() {
         print("fetchSleepData function called")
+        
+        // Set initial status to indicate fetching
+        DispatchQueue.main.async {
+            self.sleepData = SleepData(id: UUID(), hours: 0, minutes: 0, status: "Fetching sleep data...")
+        }
+        
         let sleepType = HKObjectType.categoryType(forIdentifier: .sleepAnalysis)!
         let calendar = Calendar.current
         let now = Date()
@@ -42,11 +49,17 @@ class SleepDataManager: ObservableObject {
         let query = HKSampleQuery(sampleType: sleepType, predicate: predicate, limit: HKObjectQueryNoLimit, sortDescriptors: [sortDescriptor]) { query, results, error in
             if let error = error {
                 print("Error fetching sleep data: \(error.localizedDescription)")
+                DispatchQueue.main.async {
+                    self.sleepData = SleepData(id: UUID(), hours: 0, minutes: 0, status: "Error: \(error.localizedDescription)")
+                }
                 return
             }
 
             guard let results = results as? [HKCategorySample], !results.isEmpty else {
                 print("No sleep data found")
+                DispatchQueue.main.async {
+                    self.sleepData = SleepData(id: UUID(), hours: 0, minutes: 0, status: "No sleep data found")
+                }
                 return
             }
 
@@ -59,16 +72,10 @@ class SleepDataManager: ObservableObject {
             let totalHours = Int(totalSleepDuration) / 3600
             let totalMinutes = (Int(totalSleepDuration) % 3600) / 60
             print("Total sleep duration over the past night: \(totalHours) hours, \(totalMinutes) minutes")
-
+            
             DispatchQueue.main.async {
-                self.sleepData = SleepData(id: UUID(), hours: totalHours, minutes: totalMinutes)
+                self.sleepData = SleepData(id: UUID(), hours: totalHours, minutes: totalMinutes, status: "")
             }
-
-            #if DEBUG
-            DispatchQueue.main.async {
-                self.sleepData = SleepData(id: UUID(), hours: 7, minutes: 30)
-            }
-            #endif
         }
         healthStore.execute(query)
     }

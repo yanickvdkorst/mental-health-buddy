@@ -1,5 +1,7 @@
 import SwiftUI
 
+
+
 struct HeartRateView: View {
     @ObservedObject var connectivityManager = WatchConnectivityManager()
 

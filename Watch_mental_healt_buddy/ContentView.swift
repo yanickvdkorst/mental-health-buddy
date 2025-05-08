@@ -14,15 +14,15 @@ struct ContentView: View {
                         Image(systemName: "heart.fill")
                         Text("Heart Rate")
                     }
-                NewFeatureView()
-                    .tabItem {
-                        Image(systemName: "star.fill")
-                        Text("New Features")
-                    }
                 SleepView()
                     .tabItem {
                         Image(systemName: "bed.double.fill")
                         Text("Sleep View")
+                    }
+                ExtraPageView()
+                    .tabItem {
+                        Image(systemName: "dots.fill")
+                        Text("More")
                     }
             }
         }

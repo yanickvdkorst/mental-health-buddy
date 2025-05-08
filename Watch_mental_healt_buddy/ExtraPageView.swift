@@ -1,18 +1,19 @@
 import SwiftUI
 
-struct CardData: Identifiable {
+struct ExtraCardData: Identifiable {
     let id = UUID()
     var title: String
     var description: String
     var icon: String
 }
 
-struct HomePageView: View {
+struct ExtraPageView: View {
+    @ObservedObject var connectivityManager = WatchConnectivityManager()
     @ObservedObject var sleepDataManager = SleepDataManager()
+
     @State private var cards = [
-        CardData(title: "Tip", description: "Take 5 min to breathe today", icon: "lamp"),
-        CardData(title: "Chance of Panic Attack", description: "Unlikely", icon: "question"),
-        CardData(title: "Sleep", description: "This is the third card.", icon: "moon"),
+        ExtraCardData(title: "Heart Rate", description: "Take 5 min to breathe today", icon: "lamp"),
+        ExtraCardData(title: "Sleep", description: "This is the third card.", icon: "moon"),
     ]
 
     var body: some View {
@@ -23,7 +24,7 @@ struct HomePageView: View {
 
             VStack(alignment: .leading, spacing: 24) {
                 // Header text
-                Text("Summary")
+                Text("Extra")
                     .font(Style.Text.title1)
                     .foregroundColor(Style.StyleColor.textPrimary)
                     .padding(.leading)
@@ -32,35 +33,33 @@ struct HomePageView: View {
                 ZStack {
                     Image("stok")
                         .resizable()
-                        .frame(height: 232)
+                        .frame(height: 140)
 
                     LinearGradient(
                         gradient: Gradient(colors: [Color.black.opacity(0.0), Color.black.opacity(0.8)]),
                         startPoint: .top,
                         endPoint: .bottom
                     )
-                    .frame(height: 232)
+                    .frame(height: 140)
                     .cornerRadius(10)
 
-                    Text("You are doing fine!")
+                    Text("More Info")
                         .font(Style.Text.title1)
                         .foregroundColor(Style.StyleColor.white)
-                        .offset(y: 60)
                 }
                 .cornerRadius(10)
 
                 // Clickable cards
                 VStack(spacing: 8) {
-                    ForEach($cards) { $card in
+                    ForEach(cards) { card in
                         Button(action: {
                             print("\(card.title) clicked")
                         }) {
                             VStack(alignment: .leading, spacing: 8) {
-                                HStack(spacing: 8) { // HStack voor icoon en titel
-                                    Image(card.icon) // Vervang door je eigen icoon
+                                HStack(spacing: 8) {
+                                    Image(card.icon)
                                         .resizable()
                                         .frame(width: 20, height: 24)
-                                    
                                     Text(card.title)
                                         .font(Style.Text.subheadline)
                                         .foregroundColor(Style.StyleColor.black)
@@ -79,7 +78,6 @@ struct HomePageView: View {
                         .frame(maxWidth: .infinity)
                     }
                 }
-
                 Spacer()
             }
             .padding(.horizontal, 16)
@@ -87,7 +85,10 @@ struct HomePageView: View {
         }
         .onAppear {
             sleepDataManager.requestAuthorization()
-            
+
+            // Update the heart rate card description
+            cards[0].description = "\(String(format: "%.0f", connectivityManager.heartRate)) BPM"
+
             if let sleepData = sleepDataManager.sleepData {
                 if !sleepData.status.isEmpty {
                     cards[1].description = sleepData.status
@@ -103,5 +104,5 @@ struct HomePageView: View {
 }
 
 #Preview {
-    HomePageView()
+    ExtraPageView()
 }

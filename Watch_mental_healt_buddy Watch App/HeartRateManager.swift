@@ -12,6 +12,7 @@ class HeartRateManager: NSObject, ObservableObject, WCSessionDelegate {
     private var heartRateHistory: [Double] = []
 
     @Published var heartRate: Double = 0.0
+   
 
     override init() {
         super.init()
