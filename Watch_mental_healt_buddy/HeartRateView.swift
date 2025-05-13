@@ -5,6 +5,8 @@ import SwiftUI
 struct HeartRateView: View {
     @ObservedObject var connectivityManager = WatchConnectivityManager()
 
+
+
     @State private var heartIconScale: CGFloat = 1.0
 
     var body: some View {

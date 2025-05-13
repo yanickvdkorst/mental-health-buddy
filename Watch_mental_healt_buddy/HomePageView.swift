@@ -90,13 +90,13 @@ struct HomePageView: View {
             
             if let sleepData = sleepDataManager.sleepData {
                 if !sleepData.status.isEmpty {
-                    cards[1].description = sleepData.status
+                    cards[2].description = sleepData.status
                 } else {
                     let sleepDescription = "\(sleepData.hours) hr \(sleepData.minutes) min"
-                    cards[1].description = sleepDescription
+                    cards[2].description = sleepDescription
                 }
             } else {
-                cards[1].description = "Loading..."
+                cards[2].description = "Loading..."
             }
         }
     }

@@ -6,22 +6,22 @@ struct ContentView: View {
             TabView {
                 HomePageView()
                     .tabItem {
-                        Image(systemName: "house.fill")
+                        Image(systemName: "home")
                         Text("Home")
                     }
-                HeartRateView()
-                    .tabItem {
-                        Image(systemName: "heart.fill")
-                        Text("Heart Rate")
-                    }
-                SleepView()
-                    .tabItem {
-                        Image(systemName: "bed.double.fill")
-                        Text("Sleep View")
-                    }
+//                HeartRateView()
+//                    .tabItem {
+//                        Image(systemName: "heart.fill")
+//                        Text("Heart Rate")
+//                    }
+//                SleepView()
+//                    .tabItem {
+//                        Image(systemName: "bed.double.fill")
+//                        Text("Sleep View")
+//                    }
                 ExtraPageView()
                     .tabItem {
-                        Image(systemName: "dots.fill")
+                        Image(systemName: "dots")
                         Text("More")
                     }
             }

@@ -9,10 +9,12 @@ struct ExtraCardData: Identifiable {
 
 struct ExtraPageView: View {
     @ObservedObject var connectivityManager = WatchConnectivityManager()
+
+    
     @ObservedObject var sleepDataManager = SleepDataManager()
 
     @State private var cards = [
-        ExtraCardData(title: "Heart Rate", description: "Take 5 min to breathe today", icon: "lamp"),
+        ExtraCardData(title: "Heart Rate", description: "Take 5 min to breathe today", icon: "heart"),
         ExtraCardData(title: "Sleep", description: "This is the third card.", icon: "moon"),
     ]
 
@@ -92,6 +94,7 @@ struct ExtraPageView: View {
             if let sleepData = sleepDataManager.sleepData {
                 if !sleepData.status.isEmpty {
                     cards[1].description = sleepData.status
+                    NotificationManager.instance.sendNotificationToPhone()
                 } else {
                     let sleepDescription = "\(sleepData.hours) hr \(sleepData.minutes) min"
                     cards[1].description = sleepDescription
