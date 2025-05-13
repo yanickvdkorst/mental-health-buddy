@@ -9,8 +9,6 @@ struct ExtraCardData: Identifiable {
 
 struct ExtraPageView: View {
     @ObservedObject var connectivityManager = WatchConnectivityManager()
-
-    
     @ObservedObject var sleepDataManager = SleepDataManager()
 
     @State private var cards = [

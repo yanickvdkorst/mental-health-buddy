@@ -6,7 +6,7 @@ struct ContentView: View {
             TabView {
                 HomePageView()
                     .tabItem {
-                        Image(systemName: "home")
+                        Image("home")
                         Text("Home")
                     }
 //                HeartRateView()
@@ -21,7 +21,7 @@ struct ContentView: View {
 //                    }
                 ExtraPageView()
                     .tabItem {
-                        Image(systemName: "dots")
+                        Image("dots")
                         Text("More")
                     }
             }

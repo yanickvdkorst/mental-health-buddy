@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		D73259F72DC8E42700E20BFB /* notificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D73259F62DC8E40A00E20BFB /* notificationManager.swift */; };
 		D73259F82DC8E42E00E20BFB /* notificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D73259F62DC8E40A00E20BFB /* notificationManager.swift */; };
+		D78B11832DD3A35E009C8EFB /* attackManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D78B11812DD3A34A009C8EFB /* attackManager.swift */; };
 		D78C45862D78FE4500323A8A /* Watch_mental_healt_buddy-1 Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = D78C45852D78FE4500323A8A /* Watch_mental_healt_buddy-1 Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		D7F5CB592D9AB9E400D782CE /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D7F5CB572D9AB9E400D782CE /* Localizable.strings */; };
 		D7F5CB5A2D9AB9E400D782CE /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D7F5CB572D9AB9E400D782CE /* Localizable.strings */; };
@@ -72,6 +73,7 @@
 
 /* Begin PBXFileReference section */
 		D73259F62DC8E40A00E20BFB /* notificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = notificationManager.swift; sourceTree = "<group>"; };
+		D78B11812DD3A34A009C8EFB /* attackManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = attackManager.swift; sourceTree = "<group>"; };
 		D78C455F2D78FE4200323A8A /* Watch_mental_healt_buddy-1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Watch_mental_healt_buddy-1.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D78C456F2D78FE4500323A8A /* Watch_mental_healt_buddy-1Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Watch_mental_healt_buddy-1Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D78C45792D78FE4500323A8A /* Watch_mental_healt_buddy-1UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Watch_mental_healt_buddy-1UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -172,6 +174,7 @@
 				D7F5CB572D9AB9E400D782CE /* Localizable.strings */,
 				D7C502842D7DF2BA0026CF1B /* Watch-mental-healt-buddy-1-Info.plist */,
 				D73259F62DC8E40A00E20BFB /* notificationManager.swift */,
+				D78B11812DD3A34A009C8EFB /* attackManager.swift */,
 				D78C45612D78FE4200323A8A /* Watch_mental_healt_buddy */,
 				D78C45722D78FE4500323A8A /* Watch_mental_healt_buddyTests */,
 				D78C457C2D78FE4500323A8A /* Watch_mental_healt_buddyUITests */,
@@ -452,6 +455,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D73259F72DC8E42700E20BFB /* notificationManager.swift in Sources */,
+				D78B11832DD3A35E009C8EFB /* attackManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -733,7 +737,8 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Watch-mental-healt-buddy-1-Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = Watch_mental_healt_buddy;
+				INFOPLIST_KEY_CFBundleDisplayName = "Mental Health Buddy";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
 				INFOPLIST_KEY_NSHealthShareUsageDescription = "appexamples want to acces your health data in order to analyze your health and best advice";
 				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "appexamples want to acces your health data in order to analyze your health and best advice";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -770,7 +775,8 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Watch-mental-healt-buddy-1-Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = Watch_mental_healt_buddy;
+				INFOPLIST_KEY_CFBundleDisplayName = "Mental Health Buddy";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
 				INFOPLIST_KEY_NSHealthShareUsageDescription = "appexamples want to acces your health data in order to analyze your health and best advice";
 				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "appexamples want to acces your health data in order to analyze your health and best advice";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;

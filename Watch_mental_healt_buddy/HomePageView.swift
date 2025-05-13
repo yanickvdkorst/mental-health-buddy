@@ -9,6 +9,8 @@ struct CardData: Identifiable {
 
 struct HomePageView: View {
     @ObservedObject var sleepDataManager = SleepDataManager()
+    @StateObject var attackManager = AttackManager.shared
+
     @State private var cards = [
         CardData(title: "Tip", description: "Take 5 min to breathe today", icon: "lamp"),
         CardData(title: "Chance of Panic Attack", description: "Unlikely", icon: "question"),
@@ -87,16 +89,28 @@ struct HomePageView: View {
         }
         .onAppear {
             sleepDataManager.requestAuthorization()
+            NotificationManager.instance.requestAuthorization()
+            attackManager.startMonitoring()
+            print("AttackManager started monitoring")
             
+            // Update the second card's description
             if let sleepData = sleepDataManager.sleepData {
                 if !sleepData.status.isEmpty {
-                    cards[2].description = sleepData.status
+                    // Using the correct index to update the card
+                    $cards[2].description.wrappedValue = sleepData.status
                 } else {
                     let sleepDescription = "\(sleepData.hours) hr \(sleepData.minutes) min"
-                    cards[2].description = sleepDescription
+                    $cards[2].description.wrappedValue = sleepDescription
                 }
             } else {
-                cards[2].description = "Loading..."
+                $cards[2].description.wrappedValue = "Loading..."
+            }
+            
+            if !attackManager.panicRiskStatus.isEmpty {
+                // Using the correct index to update the card
+                $cards[1].description.wrappedValue = attackManager.panicRiskStatus
+            } else {
+                $cards[1].description.wrappedValue = "Loading..."
             }
         }
     }

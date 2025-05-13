@@ -2,6 +2,8 @@ import SwiftUI
 
 struct HeartRateView: View {
     @StateObject private var heartRateManager = HeartRateManager()
+//    @StateObject var attackManager = AttackManager.shared
+    @ObservedObject var sleepDataManager = SleepDataManager()
     
     var body: some View {
         GeometryReader { geometry in
@@ -27,6 +29,14 @@ struct HeartRateView: View {
                 }
                 .frame(width: geometry.size.width, height: geometry.size.height)
             }
+        }
+        .onAppear {
+
+            NotificationManager.instance.requestAuthorization()
+            sleepDataManager.requestAuthorization()
+//            attackManager.startMonitoring()  // 👈 voeg dit toe
+                print("AttackManager started monitoring")
+            
         }
     }
 }

@@ -38,6 +38,8 @@ struct SleepView: View {
             .onAppear {
                 print("SleepView appeared on watch")
                 sleepDataManager.requestAuthorization()
+                
+                
             }
         }
     }
